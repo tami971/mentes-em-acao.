@@ -322,3 +322,28 @@ body {
     display: inline-block;
     padding-bottom: 5px;
 }
+/* Para os botões ficarem organizados nos cards */
+.botao-exemplo, .botao-analise {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.botao-exemplo {
+    background-color: #6c757d; /* Cinza */
+    color: white !important;
+}
+
+.botao-analise {
+    background-color: #004a8d; /* Azul */
+    color: white !important;
+}
+
+.botao-exemplo:hover, .botao-analise:hover {
+    filter: brightness(1.2);
+}
