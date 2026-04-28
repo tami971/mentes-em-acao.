@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mentes em Ação</title>
+        <link rel="stylesheet"
+        href="pagina.css"
+    </head>
+    <body>
+       <section class="propaganda">
+    <h2>Destaques Urgentes</h2>
+    
+    <div class="container-cards">
+        <div class="card">
+    <div class="tag-olx">OLX</div>
+    
+    <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=400" alt="Venda de Carro">
+
+    <div class="conteudo-card">
+        <h3>Vende-se URGENTE: Honda Civic 2022 - Único Dono</h3>
+        <p class="preco-golpe">R$ 45.000,00</p> 
+        <p>Oportunidade única! Veículo em estado de novo, sem detalhes. Valor abaixo da tabela para vender HOJE por motivo de mudança. Não aceito trocas, apenas PIX.</p>
+    </div>
+    <a href="https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios" target="_blank" class="botao-personalizado btn-roxo">Ver Anúncio</a>
+    
+</div>
+        <div class="card noticia-g1">
+    <div class="tag-g1">g1</div>
+            <img src="trump.jpg">
+    
+    <div class="conteudo-card">
+        <h3>Vídeo mostra momento de tiros em comício de Trump</h3>
+        <p>O ex-presidente foi retirado do jantar após sofrer mas uma tentativa de homicídio.</p>
+    </div>
+
+   <a href="https://g1.globo.com/mundo/noticia/2026/04/27/atirador-que-abriu-fogo-em-jantar-com-trump-e-formalmente-acusado-de-tentar-matar-presidente-dos-eua.ghtml" target="_blank" class="botao-g1">
+    Ler Notícia Completa
+</a>
+</div>
+    
+</section>
+<section class="quiz-interativo">
+    <h2>Desafio Rápido: É Golpe ou Verdade?</h2>
+    
+    <div class="quiz-container">
+        <div class="quiz-item">
+            <p>Um Honda Civic 2022 por R$ 45.000,00 com pedido de PIX urgente é...</p>
+            <div class="botoes-quiz">
+                <button onclick="verificar(1, true)" class="btn-quiz golpe">É GOLPE!</button>
+                <button onclick="verificar(1, false)" class="btn-quiz verdade">É VERDADE!</button>
+            </div>
+            <p id="resultado-1" class="msg-feedback"></p>
+        </div>
+
+        <div class="quiz-item">
+            <p>A notícia do G1 sobre o incidente com o ex-presidente no jantar é...</p>
+            <div class="botoes-quiz">
+                <button onclick="verificar(2, false)" class="btn-quiz golpe">É GOLPE!</button>
+                <button onclick="verificar(2, true)" class="btn-quiz verdade">É VERDADE!</button>
+            </div>
+            <p id="resultado-2" class="msg-feedback"></p>
+        </div>
+    </div>
+</section>
+
+<script>
+function verificar(pergunta, acertou) {
+    const campo = document.getElementById('resultado-' + pergunta);
+    if (acertou) {
+        campo.innerHTML = "✅ **Acertou!** Ótima análise.";
+        campo.style.color = "green";
+    } else {
+        campo.innerHTML = "❌ **Cuidado!** Verifique os sinais novamente.";
+        campo.style.color = "red";
+    }
+}
+</script>
+
+
+
+
+    </body>
+</html>
